@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "unitrade_wallet_backend": {
+      "candid": "src/unitrade_wallet_backend/unitrade_wallet_backend.did",
+      "package": "unitrade_wallet_backend",
+      "type": "rust"
+    },
+    "unitrade_wallet_frontend": {
+      "dependencies": [
+        "unitrade_wallet_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/unitrade_wallet_frontend/src/index.html"
+      },
+      "source": [
+        "src/unitrade_wallet_frontend/assets",
+        "dist/unitrade_wallet_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
