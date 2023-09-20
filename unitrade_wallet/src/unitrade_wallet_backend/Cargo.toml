@@ -13,3 +13,6 @@ candid = "0.8"
 ic-cdk = "0.7"
 ic-cdk-timers = "0.1" # Feel free to remove this dependency if you don't need timers
 serde = "1.0.188"
+sha2 = "0.10.7"
+hex = "0.4.3"
+
